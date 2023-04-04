@@ -7,7 +7,7 @@ import (
 
 // This example shows how the [Reggie.SubmatchWithName] utility provides easy
 // access to the values associated with the capture group names.
-func Example_Basic() {
+func Example_basic() {
 	regex := reggie.MustCompile(`(?P<foo>\w{3,}) (?P<bar>\w{3,})`)
 	input := "two words"
 	matches := regex.FindStringSubmatch(input)

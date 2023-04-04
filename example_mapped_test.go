@@ -7,7 +7,7 @@ import (
 
 // This example shows how the [Reggie.GroupMatches] utility provides the
 // named capture groups as a map of [github.com/samber/mo.Option] values.
-func Example_Mapped() {
+func Example_mapped() {
 	regex := reggie.MustCompile(`(?P<foo>\w{3,}) (?P<bar>\w{3,})`)
 	input := "two words"
 	matches := regex.GroupMatches(input)
